@@ -1,0 +1,72 @@
+# dado a lista
+
+#times = ['time', ['Corinthians', 'Palmeiras', 'São Paulo'], 'cores', ['Preto', 'Branco', 'Verde', 'Vermelho']]
+
+# imprima na tela as seguintes mensagens:
+
+
+# time: <nome_time>, cores: <cores_time>
+
+#print(f'{times[0]}: {times[1][0]}, {times[2]}: {times[3][0]}, {times[3][1]}')
+#print(f'{times[0]}: {times[1][1]}, {times[2]}: {times[3][2]}, {times[3][1]}')
+#print(f'{times[0]}: {times[1][2]}, {times[2]}: {times[3][0]}, {times[3][1]}, {times[3][33]}')#times = ['time', ['corinthinas', 'Palmeiras', 'Sao paulo'], 'cores',['Preto','Branco','Verde','Vermelho']]
+
+#print(f'{times[0]}: {times[1][0]}, {times[2]}: {times[3][0]}, {times[3][1]}') #cores {times[-1][0]}
+#print(f'{times[0]}: {times[1][1]}, {times[2]}: {times[3][2]}, {times[3][1]}')
+#print(f'{times[0]}: {times[1][2]}, {times[2]}: {times[3][0]}, {times[3][1]}, {times[3][3]}')# cor vermelha [-1][-1]
+
+#dicionarios
+
+2. 
+
+# dado o dicionario:
+
+dados = {
+    'estados': {
+        'sp':{
+            'nome': 'São Paulo',
+            'municipios': 645,
+            'populacao': 44.04
+        },
+        'rj':{
+            'nome': 'Rio de Janeiro',
+            'municipios': 92,
+            'populacao': 16.72
+        },
+        'mg':{
+            'nome': 'Minas Gerais',
+            'municipios': 31,
+            'populacao': 20.87
+        }
+    }
+
+}
+
+# Imprima as seguintes informações:
+
+# 1. Nome dos estados
+print(f"{dados['estados']['sp']['nome']}\
+     \n{dados['estados']['rj']['nome']}\
+      \n{dados['estados']['mg']['nome']}")
+
+#for i in dados['estados'].keys():
+#    print(dados['estados'][i]['nome'])
+
+# 2. Nome dos estados, quantidade de municipios e  população
+print(dados['estados']['sp'].values())#, dados['estados']['sp']['municipios'], dados['estados']['sp']['populacao'])
+
+print(dados['estados']['rj']['nome'], dados['estados']['rj']['municipios'], dados['estados']['rj']['populacao'])
+
+print(f"Nome: {dados['estados']['mg']['nome']}\
+     \nMunicipios: {dados['estados']['mg']['municipios']}\
+      \nPovo: {dados['estados']['mg']['populacao']}")
+
+print(' ')
+print(20*'-')
+
+for i in dados['estados'].keys():
+    print(f"Nome: {dados['estados'][i]['nome']}\
+     \nMunicipios: {dados['estados'][i]['municipios']}\
+      \nPovo: {dados['estados'][i]['populacao']}")
+    print(' ')
+    print(20*'-')
