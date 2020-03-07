@@ -10,15 +10,19 @@
 # Usuário bloqueado, ir direto pro RH
 
 funcionarios = ['joao','maria','carlos','paula','mario','frodo']
-usuario = input('Digite seu login: ')
-
-try:
-    if usuario in funcionarios:
-        if usuario == funcionarios[-1]:
-            raise NameError('Usuário bloqueado, ir direto pro RH')
+while True:
+    try:
+        usuario = input('Digite seu login: ')
+    
+        if usuario in funcionarios:
+            if usuario == funcionarios[-1]:
+                raise NameError('Usuário bloqueado, ir direto pro RH')
+            else:
+                print('Acesso Permitido')
+                break
         else:
-            print('Acesso Permitido')
-    else:
-        print('Acesso Negado!')
-except NameError as n:
-    print(n)
+            print('Acesso Negado!')
+            continue
+    except NameError as n:
+        print(n)
+        break
