@@ -12,3 +12,6 @@ for n in numeros:
     multiplicados.append(n*5)
 
 print(multiplicados)
+
+
+teste = 10
